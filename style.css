@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Roboto", sans-serif;
+    
+}
+.main_box{
+    background:url("photo.jpg");
+    height:100vh;
+    background-size:cover;
+}
+.btn_one i{
+    font-size:25px;
+    line-height:10px;
+    font-weight:700;
+    position:absolute;
+    left:16px;
+    line-height:60px;
+    transition:all 0.4s 0s linear;
+
+}
+.sidebar_menu{
+    position:fixed;
+    background-color:rgb(255,255,255,0.1);
+    height:100%;
+    width:350px;
+    box-shadow:0 3px 6px rgb(255,255,255,0.5);
+    left:-350px;
+    transition:all 0.4s 0s linear;
+}
+.sidebar_menu  .logo {
+    font-size:25px;
+    position:relative;
+    width:100%;
+    line-height:60px;
+    box-shadow:0 0 3px rgb(255,255,255,0.5);
+    height:60px;
+
+}
+.sidebar_menu .logo a{
+    color:white;
+    position:absolute;
+    text-decoration:none;
+    left:50px;
+
+}
+.sidebar_menu .menu {
+    position:absolute;
+    width:100%;
+    top:100px;
+}
+.sidebar_menu .btn_two i{
+    color:grey;
+    font-size:20px;
+    font-weight:60px;
+    position:absolute;
+    left:300px;
+    top:20px;
+    cursor:pointer;
+
+}
+.sidebar_menu .menu li {
+    color:white;
+    font-size:20px;
+    padding:14px 20px;;
+    margin-top:10px;
+}
+.sidebar_menu .menu li a{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+}
+.sidebar_menu .menu i{
+    margin-right:8px;
+}
+.sidebar_menu .social_media{
+    position:absolute;
+    left:30%;
+    bottom:60px;
+}
+.sidebar_menu .social_media i{
+    color:white;
+    opacity:0.5;
+    padding:0 5px;
+}
+#check{
+    display:none;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow:0 0 6px rgb(255,255,255,0.5);
+}
+.sidebar_menu .social_media i:hover{
+    transform:scale(1.2);
+    opacity:1;
+}
+.btn_one i:hover i{
+    font-size:40px;
+}
+.btn_two i:hover{
+    font-size:25px;
+}
+#check:checked ~ .sidebar_menu{
+    left:0px;
+
+}
+#check:checked ~.btn_one{
+    opacity:0;
+}
