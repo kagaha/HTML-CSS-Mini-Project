@@ -18,7 +18,7 @@ Student | Web Developer | Workaholic | Dedicated | Goal Oriented | Passionate to
 
 <br />
 
-### Courses I Studied
+# Courses I Studied
 
 - Major courses I have studied:
 
